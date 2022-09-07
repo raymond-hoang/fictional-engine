@@ -254,4 +254,5 @@ dash = pn.Row(
     )
 )
 
-dash.show(title = "DSM2 ANN Emulator Dashboard")
+#dash.show(title = "DSM2 ANN Emulator Dashboard")
+pn.serve(dash, addresss = '0.0.0.0', port = 8000)
